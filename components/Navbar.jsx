@@ -24,6 +24,7 @@ export default function Navbar() {
               bg={"bg-primary"}
               text={"Appointment"}
               color={"text-white"}
+              rounded="lg"
             />
           </div>
           <Icon icon="mdi:menu" className="text-3xl cursor-pointer z-50" />
@@ -48,7 +49,7 @@ export default function Navbar() {
         </div>
       </div>
       <div className="z-10 max-md:hidden">
-        <Button bg={"bg-white"} text={"Appointment"} color={"text-primary"} />
+        <Button bg={"bg-white"} text={"Appointment"} color={"text-primary"} rounded="lg"/>
       </div>
     </nav>
   );
