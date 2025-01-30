@@ -10,6 +10,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#0490BF",
+        primary_light: "#03D1F5",
+        gray: "#666666",
+        gray_dark: "#222222"
       },
     },
   },
