@@ -32,25 +32,34 @@ export default function CardsSection() {
       </div>
 
       {cardsData.map((item, index) => (
-        <div key={index} className="xl:p-10 p-5 bg-white hover:bg-primary text-gray_dark hover:text-white  cursor-pointer rounded-2xl">
-        <div className="flex justify-between items-center">
-          <div className="tracking-wider leading-snug">
-            <h1 className="text-xl">{item.title}</h1>
+        <div
+          key={index}
+          className="xl:p-10 p-5 bg-white hover:bg-primary text-gray_dark hover:text-white  cursor-pointer rounded-2xl"
+        >
+          <div className="flex justify-between items-center">
+            <div className="tracking-wider leading-snug">
+              <h1 className="text-xl">{item.title}</h1>
+            </div>
+            <Icon
+              icon={item.icon}
+              className="text-white bg-primary p-1 rounded-md text-5xl"
+            />
           </div>
-          <Icon
-            icon={item.icon}
-            className="text-white bg-primary p-1 rounded-md text-5xl"
-          />
-        </div>
 
-        <div className="mt-12">
-          <p className=" ">{item.content}</p>
-        </div>
+          <div className="mt-12">
+            <p className=" ">{item.content}</p>
+          </div>
 
-        <div className="mt-10 flex justify-center items-center">
-          <Button text={item.button_text} bg={"bg-primary"} color={"text-white"} rounded="full" className={'hover:bg-white hover:text-primary'}/>
+          <div className="mt-10 flex justify-center items-center">
+            <Button
+              text={item.button_text}
+              bg={"bg-primary"}
+              color={"text-white"}
+              rounded="full"
+              className={"hover:bg-white hover:text-primary"}
+            />
+          </div>
         </div>
-      </div>
       ))}
     </div>
   );
