@@ -9,15 +9,15 @@ import useLandingPage from '../../functional/page/useLandingPage';
 import OurServices from '../../ui/organisms/OurServices';
 
 export default function LandingPage() {
-    const {selectedIndex, setSelectedIndex} = useLandingPage();
+    const {selectedIndex, setSelectedIndex, t} = useLandingPage();
   return (
     <div className="bg-white w-full overflow-hidden">
-         <Navbar />
-         <Healthcare_Solutions />
-         <CardsSection />
-         <StatisticsCard />
-         <TestimonialSection selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
-         <OurServices />
+         <Navbar t={t}/>
+         <Healthcare_Solutions t={t}/>
+         <CardsSection t={t}/>
+         <StatisticsCard t={t}/>
+         <TestimonialSection selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex} t={t}/>
+         <OurServices t={t}/>
        </div>
   )
 }

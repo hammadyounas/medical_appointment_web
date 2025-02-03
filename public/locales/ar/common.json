@@ -1,0 +1,141 @@
+{
+  "navbar": {
+    "about": "معلومات عنا",
+    "services": "الخدمات",
+    "contact": "اتصل بنا",
+    "appointment": "موعد"
+  },
+
+  "home": {
+    "medical": "طبي",
+    "healthcare": "الرعاية الصحية",
+    "solutions": "الحلول",
+    "text": "لوريم إيبسوم، دولور سيت أميت كونسيكتيتور أديبيسينج إليت. أبيريوم بوررو نيشونت بوسيموس كوارات كواس أركيتكتو سونت بارياتور فيليت أوديو موليستيا نومكوام، أوفيسيا ريبرهينديريت ديسيرونت آيد نيكي إلوم إيمبيديت إيبسا ريروم! فيريتاتيس كواس يور نيكوي؟",
+    "appointment_button": "احجز موعدًا"
+  },
+
+  "card_section": {
+    "card1": {
+      "opening": "افتتاح",
+      "hours": "ساعات العمل",
+      "address": "عنوان",
+      "add_details": "إنفورماتيكا هولندا",
+      "BV": "ب.ف"
+    },
+    "cards": [
+      {
+        "title": "موعد",
+        "icon": "carbon:event-schedule",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "button_text": "طلب"
+      },
+      {
+        "title": "اتصال مباشر",
+        "icon": "mage:phone-call",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "button_text": "اتصال"
+      },
+      {
+        "title": "البحث عن مواقع",
+        "icon": "ep:map-location",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.",
+        "button_text": "الموقع"
+      }
+    ]
+  },
+
+  "statistics_card": [
+    {
+      "title": "سنوات من الخبرة",
+      "count": 25,
+      "icon": "oui:app-users-roles"
+    },
+    {
+      "title": "التخصصات الطبية",
+      "count": 470,
+      "icon": "clarity:users-line"
+    },
+    {
+      "title": "التخصصات الطبية",
+      "count": 765,
+      "icon": "solar:hospital-outline"
+    },
+    {
+      "title": "مرضى سعداء",
+      "count": 9036,
+      "icon": "la:users-cog"
+    }
+  ],
+
+  "reviews_title": {
+    "heading": "بعض المراجعات",
+    "subHeading": "لعملائنا"
+  },
+
+  "reviews": [
+    {
+      "name": "باولو هوبرت",
+      "location": "نيويورك، الولايات المتحدة",
+      "image": "/assets/images/user-1.jpg",
+      "review": "اضطررت مؤخرًا إلى إحضار طفلي إلى ProHealth بسبب إصابة طفيفة، وقد أعجبت كثيرًا بالرعاية التي تلقاها. كان طبيب الأطفال رائعًا معه وجعله يشعر بالراحة.",
+      "rating": 5
+    },
+    {
+      "name": "لورنس فينيتا",
+      "location": "كاليفورنيا، الولايات المتحدة",
+      "image": "/assets/images/user-2.jpeg",
+      "review": "خدمة احترافية تمامًا. كان الموظفون لطفاء ومتعاونين للغاية. أنصح به بشدة!",
+      "rating": 5
+    },
+    {
+      "name": "كاساندرا بول",
+      "location": "فلوريدا",
+      "image": "/assets/images/user-3.jpg",
+      "review": "أفضل تجربة لي في منشأة طبية. طاقم عمل ودود للغاية وخدمة فعالة!",
+      "rating": 5
+    }
+  ],
+
+  "services": [
+    {
+      "image": "/assets/images/service1.avif",
+      "title": "الاستشارة في العيادة",
+      "text": "استشارات طبية مهنية في عيادتنا لجميع مخاوفك الصحية."
+    },
+    {
+      "image": "/assets/images/service2.jpg",
+      "title": "الاستشارة المنزلية",
+      "text": "احصل على استشارات طبية من راحة منزلك مع أطبائنا الخبراء."
+    },
+    {
+      "image": "/assets/images/service3.jpg",
+      "title": "الأدوية",
+      "text": "إرشادات الخبراء حول الأدوية الموصوفة لضمان العلاج الفعّال."
+    },
+    {
+      "image": "/assets/images/service4.jpg",
+      "title": "النصائح الغذائية",
+      "text": "إرشادات غذائية مخصصة لنمط حياة صحي وتحسين الصحة العامة."
+    },
+    {
+      "image": "/assets/images/service5.webp",
+      "title": "نظافة الحياة",
+      "text": "نصائح شاملة حول الحفاظ على روتين صحي ونظيف يوميًا."
+    },
+    {
+      "image": "/assets/images/service6.avif",
+      "title": "الشهادات، التقارير ورسائل الإحالة",
+      "text": "وثائق طبية رسمية للعمل، السفر، والمتطلبات الأخرى."
+    },
+    {
+      "image": "/assets/images/service7.avif",
+      "title": "الرعاية الطبية",
+      "text": "رعاية طبية عالية الجودة مصممة خصيصًا لتلبية احتياجاتك الصحية."
+    },
+    {
+      "image": "/assets/images/service8.jpg",
+      "title": "تخطيط القلب (ECG)",
+      "text": "اختبارات تخطيط القلب دقيقة وسريعة لتقييم صحة قلبك."
+    }
+  ]
+}

@@ -2,10 +2,10 @@ import React from 'react'
 import { StatisticsCardData } from '../../functional/constant/statistics_card_constant'
 import { Icon } from '@iconify/react'
 
-export default function StatisticsCard() {
+export default function StatisticsCard({t}) {
   return (
     <div className='xl:px-28 xl:py-16 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5'>
-        {StatisticsCardData.map((item, index) => (
+        {t.statistics_card.map((item, index) => (
              <div
              key={index}
              className="group xl:p-10 p-5  text-gray_dark rounded-2xl transition-all duration-300"

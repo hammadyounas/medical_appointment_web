@@ -3,15 +3,15 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import Button from "../../../../components/atoms/Button";
 
-export default function CardsSection() {
+export default function CardsSection({t}) {
   return (
     <div className="bg-[#def5f8] xl:p-28 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
       {/* card 1 */}
       <div className="xl:p-10 p-5 bg-white hover:bg-primary text-gray_dark hover:text-white  cursor-pointer rounded-2xl shadow-md">
         <div className="flex justify-between items-center">
           <div className="tracking-wider leading-snug">
-            <h1 className="text-xl">Opening</h1>
-            <h1 className="text-xl">Hours</h1>
+            <h1 className="text-xl">{t.card_section.card1.opening}</h1>
+            <h1 className="text-xl">{t.card_section.card1.hours}</h1>
           </div>
           <Icon
             icon={"hugeicons:clock-05"}
@@ -25,13 +25,13 @@ export default function CardsSection() {
         </div>
 
         <div className="my-5">
-          <p className="text-sm">Address</p>
-          <p>Informatica Netherland</p>
-          <p>B.V</p>
+          <p className="text-sm">{t.card_section.card1.address}</p>
+          <p>{t.card_section.card1.add_details}</p>
+          <p>{t.card_section.card1.BV}</p>
         </div>
       </div>
 
-      {cardsData.map((item, index) => (
+      {t.card_section.cards.map((item, index) => (
        <div
        key={index}
        className="group xl:p-10 p-5 bg-white hover:bg-primary text-gray_dark hover:text-white  cursor-pointer rounded-2xl transition-all duration-300"
