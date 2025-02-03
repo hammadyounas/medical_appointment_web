@@ -1,14 +1,9 @@
-import CardsSection from "@/components/CardsSection";
-import Healthcare_Solutions from "@/components/Healthcare_Solutions";
-import Navbar from "@/components/Navbar";
+import LandingPage from "@/templates/LandingPage/combined/page/LandingPage";
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className="bg-white w-full overflow-hidden">
-      <Navbar />
-      <Healthcare_Solutions />
-      <CardsSection />
-        
-    </div>
+    <LandingPage />
   );
 }
+
+export default Home;

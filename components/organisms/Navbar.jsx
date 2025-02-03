@@ -2,7 +2,7 @@
 
 import { Icon } from "@iconify/react";
 import React, { useState } from "react";
-import Button from "./ui/Button";
+import Button from "../atoms/Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
