@@ -38,7 +38,7 @@ export default function CardsSection() {
      >
        <div className="flex justify-between items-center">
          <div className="tracking-wider leading-snug">
-           <h1 className="text-xl">{item.title}</h1>
+           <h1 className="sm:text-xl">{item.title}</h1>
          </div>
          <Icon
            icon={item.icon}

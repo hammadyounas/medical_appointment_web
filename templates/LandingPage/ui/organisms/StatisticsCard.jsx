@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 
 export default function StatisticsCard() {
   return (
-    <div className='xl:p-28 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5'>
+    <div className='xl:px-28 xl:py-16 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5'>
         {StatisticsCardData.map((item, index) => (
              <div
              key={index}

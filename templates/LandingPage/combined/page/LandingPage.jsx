@@ -6,6 +6,7 @@ import CardsSection from '../../ui/organisms/CardsSection'
 import StatisticsCard from '../../ui/organisms/StatisticsCard';
 import TestimonialSection from '../../ui/organisms/TestimonialSection';
 import useLandingPage from '../../functional/page/useLandingPage';
+import OurServices from '../../ui/organisms/OurServices';
 
 export default function LandingPage() {
     const {selectedIndex, setSelectedIndex} = useLandingPage();
@@ -16,6 +17,7 @@ export default function LandingPage() {
          <CardsSection />
          <StatisticsCard />
          <TestimonialSection selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
+         <OurServices />
        </div>
   )
 }

@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 export default function TestimonialSection({selectedIndex, setSelectedIndex}) {
 
   return (
-    <section className="bg-gray-100 py-5 px-6 lg:px-32">
+    <section className="bg-gray-100 py-3 px-6 lg:px-32">
       <h2 className="text-center lg:text-3xl sm:text-2xl text-xl font-bold text-gray-900">Some Reviews</h2>
       <p className="text-center text-primary mb-12 sm:text-base text-sm">OF OUR CLIENTS</p>
       <div className="flex flex-col md:flex-row gap-8 items-center">
