@@ -12,7 +12,7 @@ export default function LandingPage() {
     const {selectedIndex, setSelectedIndex, t} = useLandingPage();
   return (
     <div className="bg-white w-full overflow-hidden">
-         <Navbar t={t}/>
+         <Navbar />
          <Healthcare_Solutions t={t}/>
          <CardsSection t={t}/>
          <StatisticsCard t={t}/>

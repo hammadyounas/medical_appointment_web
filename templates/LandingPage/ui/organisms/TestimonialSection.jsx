@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Image from "next/image";
-import { testimonialsData } from "../../functional/constant/testimonials_constant";
 import { Icon } from "@iconify/react";
 
 export default function TestimonialSection({selectedIndex, setSelectedIndex, t}) {

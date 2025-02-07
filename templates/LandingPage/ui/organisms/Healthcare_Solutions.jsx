@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Button from "@/components/atoms/Button";
+import {Button} from "@/components/atoms/Button";
 
 export default function Healthcare_Solutions({t}) {
   return (

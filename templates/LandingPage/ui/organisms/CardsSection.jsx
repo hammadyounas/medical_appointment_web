@@ -1,7 +1,7 @@
 import { cardsData } from "@/templates/LandingPage/functional/constant/cards_constant";
 import { Icon } from "@iconify/react";
 import React from "react";
-import Button from "../../../../components/atoms/Button";
+import {Button} from "../../../../components/atoms/Button";
 
 export default function CardsSection({t}) {
   return (

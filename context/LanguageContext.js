@@ -12,7 +12,7 @@ export const LanguageProvider = ({ children }) => {
 
   const changeLanguage = (newLocale) => {
     setLocale(newLocale);
-    localStorage.setItem('locale', newLocale); // Save the language in localStorage
+    localStorage.setItem('locale', newLocale);
   };
 
   useEffect(() => {
