@@ -18,9 +18,9 @@ export default function Dropdown({ options, label, onSelect, className }) {
   };
 
   return (
-    <div className={`relative w-full max-sm:text-sm ${className}`}>
+    <div className={`relative w-full max-lg:text-sm ${className}`}>
       <button
-        className="w-full bg-white text-primary border border-primary rounded-lg sm:py-2 sm:px-4 py-1 px-2 flex justify-between items-center shadow-sm hover:shadow-md focus:outline-none"
+        className="w-full bg-white text-primary border border-primary rounded-lg sm:py-2 lg:px-4 py-1 px-2 flex justify-between items-center shadow-sm hover:shadow-md focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span className="flex items-center gap-2">

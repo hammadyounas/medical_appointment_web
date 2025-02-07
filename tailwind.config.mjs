@@ -14,7 +14,8 @@ export default {
         primary: "#0490BF",
         primary_light: "#03D1F5",
         gray: "#666666",
-        gray_dark: "#222222"
+        gray_dark: "#222222",
+        light_blue: "#def5f8"
       },
     },
   },

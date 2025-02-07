@@ -44,7 +44,7 @@ export default function DoctorsCard({ t }) {
                 color="text-white group-hover:text-primary"
                 rounded="md"
                 className="transition-all duration-300 hover:bg-white hover:text-primary hover:border-2 border-primary"
-                href={"#"}
+                href={`/doctors/${index}`}
               />
             </div>
           </div>

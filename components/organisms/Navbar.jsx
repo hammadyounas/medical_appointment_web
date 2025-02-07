@@ -19,6 +19,14 @@ export default function Navbar() {
 
   const t = translations[locale];
 
+  const navbarLinks = [
+    { label: t.navbar.about, href: "#" },  // ✅ Fixed
+    { label: t.navbar.services, href: "#" },
+    { label: t.navbar.contact, href: "#" },
+    { label: t.navbar.doctors, href: "/doctors" },
+  ];
+  
+
   const handleSelect = (selectedOption) => {
     changeLanguage(selectedOption.value); // Update language when selected
   };
@@ -52,27 +60,20 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:flex flex-col md:flex-row max-md:justify-between items-center lg:text-lg md:font-medium font-semibold absolute md:relative md:ml-14 max-md:h-[80vh] bg-white md:bg-transparent max-md:w-full top-10 left-0 md:top-0 p-5 md:p-0 shadow-lg md:shadow-none`}
+          } md:flex flex-col md:flex-row max-md:justify-between items-center lg:text-lg sm:text-sm md:font-medium font-semibold absolute md:relative md:ml-14 max-md:h-[80vh] bg-white md:bg-transparent max-md:w-full top-0 left-0 md:top-0 p-5 md:p-0 shadow-lg md:shadow-none`}
         >
-          <ul className="flex flex-col max-md:justify-center max-md:text-center whitespace-nowrap md:flex-row space-y-5 md:space-y-0 md:space-x-5 max-md:mt-10">
-            <li className="hover:text-primary hover:border-b border-primary cursor-pointer duration-500">
-              <a href="#">{t.navbar.about}</a>
-            </li>
-            <li className="hover:text-primary hover:border-b border-primary cursor-pointer duration-500">
-              <a href="#">{t.navbar.services}</a>
-            </li>
-            <li className="hover:text-primary hover:border-b border-primary cursor-pointer duration-500">
-              <a href="#">{t.navbar.contact}</a>
-            </li>
-            <li className="hover:text-primary hover:border-b border-primary cursor-pointer duration-500">
-              <a href="/doctors">{t.navbar.doctors}</a>
+          {navbarLinks.map((link, index) => (
+          <ul key={index} className="flex flex-col max-md:justify-center max-md:text-center whitespace-nowrap md:flex-row space-y-5 md:space-y-0 md:space-x-5 max-md:mt-10">
+            <li className="hover:text-primary hover:border-b border-primary cursor-pointer duration-500 mr-5">
+              <a href={link.href}>{link.label}</a>
             </li>
           </ul>
+          ))}
         </div>
       </div>
 
       {/* Dropdown and Appointment Button */}
-      <div className="z-10 max-md:hidden flex items-center gap-2">
+      <div className=" max-md:hidden flex items-center gap-2">
         <Dropdown
           options={languageOptions}
           label="Language"
@@ -83,7 +84,7 @@ export default function Navbar() {
           text={t.navbar.appointment}
           color={"text-primary"}
           rounded="lg"
-          className="whitespace-nowrap"
+          className="whitespace-nowrap z-10"
         />
       </div>
     </nav>

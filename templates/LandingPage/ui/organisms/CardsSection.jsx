@@ -5,7 +5,7 @@ import {Button} from "../../../../components/atoms/Button";
 
 export default function CardsSection({t}) {
   return (
-    <div className="bg-[#def5f8] xl:p-28 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
+    <div className="bg-light_blue xl:p-28 sm:p-10 p-5 grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-5">
       {/* card 1 */}
       <div className="xl:p-10 p-5 bg-white hover:bg-primary text-gray_dark hover:text-white  cursor-pointer rounded-2xl shadow-md">
         <div className="flex justify-between items-center">
