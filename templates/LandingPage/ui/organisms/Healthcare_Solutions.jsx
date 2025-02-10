@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import {Button} from "@/components/atoms/Button";
+import {Button, LinkButton} from "@/components/atoms/Button";
 
 export default function Healthcare_Solutions({t}) {
   return (
@@ -17,11 +17,12 @@ export default function Healthcare_Solutions({t}) {
         </p>
 
         <div className="flex rounded-full md:my-8 my-3">
-          <Button
+          <LinkButton
             bg={"bg-primary"}
             text={t.home.appointment_button}
             color={"text-white"}
             rounded="full"
+            href={"/appointment"}
           />
         </div>
       </div>
