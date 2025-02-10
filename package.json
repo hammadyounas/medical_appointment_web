@@ -16,8 +16,10 @@
     "next-i18next": "^15.4.1",
     "next-intl": "^3.26.3",
     "react": "^19.0.0",
+    "react-calendly": "^4.3.1",
     "react-dom": "^19.0.0",
-    "react-i18next": "^15.4.0"
+    "react-i18next": "^15.4.0",
+    "react-select": "^5.10.0"
   },
   "devDependencies": {
     "postcss": "^8",

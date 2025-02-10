@@ -27,7 +27,7 @@ export default function DoctorsCard({ t }) {
             </div>
 
             <div className="p-5">
-              <h1 className="sm:text-xl">{doc.name}</h1>
+              <h1 className="sm:text-xl "><a href={`/doctors/${index}`} className="hover:text-primary_light">{doc.name}</a></h1>
               <p className="text-primary mt-1">
                 {doc.speciality}
               </p>
