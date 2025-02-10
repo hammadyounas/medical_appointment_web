@@ -1,6 +1,6 @@
 import { doctorsData } from "@/templates/DoctorsPage/functional/constant/doctors_contant";
 import { servicesData } from "@/templates/LandingPage/functional/constant/services_constant";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 export default function useAppointment() {
   const [step, setStep] = useState(1);

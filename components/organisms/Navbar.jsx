@@ -23,7 +23,7 @@ export default function Navbar() {
   const t = translations[locale];
 
   const navbarLinks = [
-    { label: t.navbar.about, href: "#" }, 
+    { label: t.navbar.about, href: "#" },
     { label: t.navbar.services, href: "#" },
     { label: t.navbar.contact, href: "#" },
     { label: t.navbar.doctors, href: "/doctors" },
