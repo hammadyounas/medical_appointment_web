@@ -27,6 +27,7 @@ export default function Navbar() {
     { label: t.navbar.services, href: "#" },
     { label: t.navbar.contact, href: "#" },
     { label: t.navbar.doctors, href: "/doctors" },
+    { label: t.navbar.appointment, href: "/appointment" },
   ];
 
   const handleSelect = (selectedOption) => {
@@ -36,7 +37,7 @@ export default function Navbar() {
   return (
     <nav className="lg:p-10 sm:p-5 p-2 flex justify-between items-center">
       <div className="flex max-md:justify-between items-center w-full">
-        <div className="text-primary z-10">
+        <div className="text-primary z-40">
           <Link href="/" className="flex items-center">
             <Icon icon="jam:medical" className="sm:text-5xl text-3xl" />
             <h1 className="font-semibold sm:text-3xl text-xl">medCare</h1>
@@ -44,7 +45,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex items-center space-x-2">
+        <div className="md:hidden flex items-center space-x-2 z-20">
           <Dropdown
             options={languageOptions}
             label="Language"
@@ -61,7 +62,7 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } md:flex flex-col md:flex-row max-md:justify-between items-center lg:text-lg sm:text-sm md:font-medium font-semibold absolute md:relative md:ml-14 max-md:h-[80vh] bg-white md:bg-transparent max-md:w-full top-0 left-0 md:top-0 p-5 md:p-0 shadow-lg md:shadow-none`}
+          } md:flex flex-col md:flex-row max-md:justify-between items-center lg:text-lg sm:text-sm md:font-medium font-semibold absolute md:relative md:ml-14 max-md:h-[80vh] bg-white md:bg-transparent max-md:w-full top-0 left-0 md:top-0 p-5 md:p-0 shadow-lg md:shadow-none z-10`}
         >
           {navbarLinks.map((link, index) => (
             <ul
@@ -75,7 +76,7 @@ export default function Navbar() {
                     : "hover:text-primary hover:border-b hover:border-primary"
                 }`}
               >
-                <Link href={link.href}>{link.label}</Link>
+                <Link href={link.href} className={`${link.label === t.navbar.appointment ? 'sm:hidden' : 'block'}`}>{link.label}</Link>
               </li>
             </ul>
           ))}

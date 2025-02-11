@@ -22,7 +22,7 @@ export default function MultiStepForm() {
     selectedDoctor,
   } = useAppointment();
   return (
-    <div className="mx-auto p-6 bg-white  flex flex-col justify-center items-center lg:h-[70vh] md:h-[90vh]">
+    <div className="mx-auto sm:p-6 p-2 bg-white  flex flex-col justify-center items-center lg:h-[70vh] md:h-[90vh] overflow-x-hidden">
       {step === 1 && (
         <SelectServices
           nextStep={nextStep}

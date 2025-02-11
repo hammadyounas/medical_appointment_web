@@ -49,6 +49,7 @@ export default function useAppointment() {
   const doctorsOptions = filteredDoctors.map((doctor) => ({
     value: doctor.name,
     label: doctor.name,
+    image: doctor.image,
   }));
 
   const handleDoctorChange = (selectedOption) => {

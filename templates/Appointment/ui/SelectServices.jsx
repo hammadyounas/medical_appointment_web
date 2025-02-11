@@ -10,10 +10,10 @@ export default function SelectServices({
 }) {
   return (
     <div className="max-w-2xl flex flex-col justify-center items-center w-full shadow-md shadow-gray p-6 rounded-md">
-      <h1 className="text-3xl font-semibold text-primary my-5">
+      <h1 className="sm:text-3xl text-xl font-semibold text-primary my-5">
         Book An Appointment
       </h1>
-      <h2 className="text-xl font-bold mb-4">Select a Service</h2>
+      <h2 className="sm:text-xl text-lg font-bold mb-4">Select a Service</h2>
       <Select
         options={serviceOptions}
         value={selectedService}
