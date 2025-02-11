@@ -9,7 +9,7 @@ export default function SelectServices({
   serviceOptions,
 }) {
   return (
-    <div className="max-w-2xl flex flex-col justify-center items-center w-full shadow-md shadow-gray p-6 rounded-md">
+    <div className="max-w-2xl flex flex-col sm:justify-center items-center w-full shadow-md shadow-gray p-6 h-full rounded-md">
       <h1 className="sm:text-3xl text-xl font-semibold text-primary my-5">
         Book An Appointment
       </h1>
