@@ -41,11 +41,7 @@ export default function MultiStepForm() {
         />
       )}
       {step === 3 && (
-        <SelectAvailableSlots
-          nextStep={nextStep}
-          prevStep={prevStep}
-          updateFormData={updateFormData}
-        />
+        <SelectAvailableSlots/>
       )}
     </div>
   );

@@ -29,7 +29,7 @@ export default function DoctorsCard({ t }) {
             <div className="p-5">
               <h1 className="sm:text-xl "><a href={`/doctors/${index}`} className="hover:text-primary_light">{doc.name}</a></h1>
               <p className="text-primary mt-1">
-                {doc.speciality}
+                <a href={`/appointment/doctor-appointment`} className="hover:text-gray">{doc.speciality}</a>
               </p>
               <p className="text-black mt-1 text-sm">Works {doc.timing}</p>
               <p className="text-gray mt-1 sm:mb-10 mb-5">
